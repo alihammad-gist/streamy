@@ -2,6 +2,11 @@
 
 Filter arrays/slices using lazy loaded functions.
 
+
+#### GetFirst / GetLast
+Use GetLast to get Last value passes the filter successfully or use GetFirst
+to get First value that passes through provided filters
+
 ```go
 package main
 
@@ -48,7 +53,9 @@ ok:  true  - num:  8
 ```
 
 #### GetN(resultCount, order)
-```
+GetN requires you pass in 'n' (count of matched values). Iteration stops when resultCount is achieved, pass 0 to get all matched indexes. Second argument is order the slice should be evaluated in `streamy.OrderAsc` or `streamy.OrderDesc`. Note, returned list of matched indexes will follow the same order.
+
+```go
 package main
 
 import (
