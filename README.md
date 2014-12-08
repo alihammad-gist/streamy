@@ -4,8 +4,8 @@ Filter arrays/slices using lazy loaded functions.
 
 
 #### GetFirst / GetLast
-Use GetLast to get Last value passes the filter successfully or use GetFirst
-to get First value that passes through provided filters
+Use GetLast to get the Last value that passes all the filters successfully or use GetFirst
+to get the First value that passes through provided filters
 
 ```go
 package main
